@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p> Tente abrir esse site em vários dispositivos diferentes <br> ou simplesmente aumente ou diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="Imagens/imagem-g.png" alt= "Imagem Flexível">
+         </picture>
+    <h1>Reproduzindo Áudios </h1>
+    <p>Reproduzindo áudios em  <a href="https://www.w3c.br/pub/Cursos/CursoHTML5/html5-web.pdf" >  HTML5</p>
+    <div>
+        <audio src="Imagens/First Love - Wayne Jones.mp3" controls autoplay></audio>
+    </div>
+    <!--Suporta os formatos MP3, WAV e  OGG-->
+    
+    <!--Adicionando áudio de outra maneira-->
+
+    <audio preload="metadata" controls autoplay>
+        <source src="Imagens/Yah Yah - josh pan.mp3" type="audio/mpeg">
+            <source src="Imagens/Yah Yah - josh pan.ogg" type="audio/ogg">
+                <source src="Imagens/Yah Yah - josh pan.wav" type="audio/wav">             
+    </audio>
+   
+    <footer>
+        <a> <em>Infelizmente seu navegador não consegue reproduzir áudio</em> </a>
+        <a href="Imagens/Yah Yah - josh pan.mp3"> <em> clique aqui para baixar o seu MP3</em></a>   
+    </footer>
+</body>
+</html>
